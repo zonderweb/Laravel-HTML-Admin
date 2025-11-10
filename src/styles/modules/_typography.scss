@@ -1,0 +1,39 @@
+@use "fn";
+@use "var";
+
+body {
+  color: var.$body-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: fn.rem(14);
+  line-height: fn.rem(21);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var.$grey;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: fn.rem(26);
+  line-height: fn.rem(32);
+}
+
+h2 {
+  font-size: fn.rem(23);
+  line-height: fn.rem(28);
+}
+
+h3 {
+  font-size: fn.rem(20);
+  line-height: fn.rem(24);
+}
+
+h4 {
+  font-size: fn.rem(17);
+  line-height: fn.rem(20);
+}
+
+h5, h6 {
+  font-size: fn.rem(14);
+  line-height: fn.rem(17);
+}

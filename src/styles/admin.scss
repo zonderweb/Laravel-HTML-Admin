@@ -1,6 +1,8 @@
 @use "bootstrap" as *;
-@import "@fortawesome/fontawesome-free/css/all.min.css";
+@use "modules/typography";
+@use "modules/fn";
+@use "modules/var";
 
-body {
-  color: red;
-}
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
