@@ -1,0 +1,99 @@
+@use "var" as *;
+@use "fn" as *;
+
+/* SIDEBAR */
+.sidebar {
+  background-color: $bg-sidebar;
+  //color: #252f4a;
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+a.nav-link {
+  color: #252f4a;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+  padding-left: 0;
+}
+
+.sidebar.collapsed .nav-link span {
+  display: none;
+}
+
+.sidebar.collapsed .nav-link {
+  text-align: center;
+}
+
+.sidebar.collapsed .nav-link i {
+  font-size: 1.5rem;
+}
+
+.sidebar-toogle-btn {
+  border: 1px solid #dbdfea;
+  border-radius: 8px;
+  background: #f6f6f8;
+  color: #252f4a;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  padding: 3px 5px;
+}
+
+.sidebar-toogle-btn i {
+  color: #aeaec1;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.sidebar-toogle-btn:hover i {
+  color: #f8285a;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: rem(28);
+  line-height: rem(28);
+  margin-bottom: 40px;
+}
+
+.logo > i {
+  color: #f8285a;
+  margin-right: 10px;
+}
+
+.sidebar.collapsed .logo span {
+  display: none;
+}
+
+.sidebar.collapsed .logo {
+  text-align: center;
+}
+
+.sidebar.collapsed .logo i {
+  font-size: 38px;
+  margin-right: 0;
+}
+
+.sidebar.collapsed .sidebar-menu-title {
+  text-align: center;
+}
+
+.sidebar.collapsed .sidebar-menu-title span {
+  display: none;
+}
+
+.sidebar-menu-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #071437;
+  margin-left: 15px;
+}

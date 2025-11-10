@@ -1,0 +1,25 @@
+@use "var" as *;
+@use "fn" as *;
+
+
+/* Основний вміст */
+.main-content {
+  flex-grow: 1;
+  padding: 25px 30px;
+  background-color: #fff;
+  margin-left: 250px;
+  position: relative;
+}
+
+.main-content.collapsed {
+  margin-left: 80px;
+}
+
+/* HEADER */
+.header {
+  padding-left: 10px;
+}
+
+.login-area {
+  margin-left: auto;
+}

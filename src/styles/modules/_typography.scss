@@ -4,11 +4,20 @@
 
 body {
   color: $body-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: rem(14);
   line-height: rem(21);
-  background-color: $body-bg-color;
   font-weight: 500;
+  min-height: 100vh;
+  display: flex;
+  overflow: auto;
+  background-color: $bg-sidebar
+}
+
+.logo {
+  span {
+    color: #fff;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
