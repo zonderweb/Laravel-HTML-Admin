@@ -10,8 +10,8 @@
 
 <!--SIDEBAR-->
 <nav class="sidebar">
-    <div class="logo"><i class="fa-brands fa-laravel"></i> <span>L.admin</span></div>
-    <h4 class="sidebar-menu-title"><span>Головне Меню</span></h4>
+    <div class="logo"><i class="fa-brands fa-laravel"></i> <span>LaravelAdmin</span></div>
+    <div class="sidebar-menu-title"><span>Navigation</span></div>
     <ul class="nav flex-column">
         <li class="nav-item">
             <a class="nav-link" href="#">
@@ -21,24 +21,57 @@
         </li>
     </ul>
 </nav>
+<!--END SIDEBAR-->
 
 <!--MAIN AREA-->
 <div class="main-content">
-    <!--    BTN MENU-->
-    <div id="toggleSidebar" class="sidebar-toogle-btn">
-        <i class="fa-solid fa-bars"></i>
-    </div>
     <!--    HEADER-->
-    <div class="header d-flex align-items-center mb-4 mt-2">
-        <h1 class="header-title">Admin Panel</h1>
-        <div class="login-area">
-            <a href="/" class="login">
-                <i class="bi bi-person-bounding-box"></i>
-            </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header-navbar">
+        <div class="container-fluid">
+            <div id="toggleSidebar" class="sidebar-toggle-btn">
+                <i class="fa-regular fa-bars"></i>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Mega Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+    <!--END HEADER-->
 
     <!--    MAIN CONTENT-->
+    <main class="main-content-area">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="h5 mb-3">Welcome Content</h1>
+                <div class="card-item">
+                    <div class="card-item-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis deleniti distinctio
+                            earum ex illo minus sed sit tempore ullam! Animi, consectetur consequuntur cumque,
+                            cupiditate deleniti dignissimos dolore dolorem enim fugiat fugit harum illo impedit ipsa
+                            libero maxime modi nostrum omnis quasi quis, ratione saepe sapiente sint voluptas voluptate
+                            voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </div>
 <script type="module" src="/src/main.js"></script>
 </body>

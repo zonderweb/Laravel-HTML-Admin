@@ -1,10 +1,11 @@
 @use "var" as *;
 @use "fn" as *;
+@use "bootstrap" as b;
 
 /* SIDEBAR */
 .sidebar {
   background-color: $bg-sidebar;
-  //color: #252f4a;
+  color: $sidebar-link;
   width: 250px;
   min-height: 100vh;
   position: fixed;
@@ -12,10 +13,10 @@
   left: 0;
   padding-top: 20px;
   padding-left: 40px;
-}
 
-a.nav-link {
-  color: #252f4a;
+  a.nav-link {
+    color: $sidebar-link;
+  }
 }
 
 .sidebar.collapsed {
@@ -35,39 +36,38 @@ a.nav-link {
   font-size: 1.5rem;
 }
 
-.sidebar-toogle-btn {
-  border: 1px solid #dbdfea;
-  border-radius: 8px;
-  background: #f6f6f8;
-  color: #252f4a;
+.sidebar-toggle-btn {
+  color: $body-color;
   cursor: pointer;
-  position: absolute;
-  top: 40px;
-  left: -15px;
-  padding: 3px 5px;
+  margin-right: rem(10);
 }
 
-.sidebar-toogle-btn i {
-  color: #aeaec1;
+.sidebar-toggle-btn i {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: rem(24);
+  line-height: rem(24);
 }
 
-.sidebar-toogle-btn:hover i {
-  color: #f8285a;
+.sidebar-toggle-btn:hover i {
+  color: b.$blue-400;
 }
 
 .logo {
   font-weight: 600;
-  font-size: rem(28);
-  line-height: rem(28);
+  font-size: rem(18);
+  line-height: rem(29);
   margin-bottom: 40px;
 }
 
-.logo > i {
-  color: #f8285a;
-  margin-right: 10px;
+.logo {
+  span {
+    color: #fff;
+  }
+
+  i {
+    color: #f8285a;
+    margin-right: 10px;
+  }
 }
 
 .sidebar.collapsed .logo span {
@@ -92,8 +92,8 @@ a.nav-link {
 }
 
 .sidebar-menu-title {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #071437;
+  font-size: rem(13);
+  line-height: rem(20);
+  color: $sidebar-title;
   margin-left: 15px;
 }

@@ -5,8 +5,7 @@
 /* Основний вміст */
 .main-content {
   flex-grow: 1;
-  padding: 25px 30px;
-  background-color: #fff;
+  background-color: $body-bg-color;
   margin-left: 250px;
   position: relative;
 }
@@ -15,11 +14,6 @@
   margin-left: 80px;
 }
 
-/* HEADER */
-.header {
-  padding-left: 10px;
-}
-
-.login-area {
-  margin-left: auto;
+main.main-content-area {
+  padding: rem(40) rem(40) rem(24);
 }

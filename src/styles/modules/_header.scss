@@ -1,0 +1,8 @@
+@use "var" as *;
+@use "fn" as *;
+
+.header-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 0 2rem 0 rgba(41, 48, 66, .1);
+}
