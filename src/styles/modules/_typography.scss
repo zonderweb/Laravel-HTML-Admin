@@ -1,39 +1,55 @@
-@use "fn";
-@use "var";
+@use "bootstrap" as b;
+@use "var" as *;
+@use "fn" as *;
 
 body {
-  color: var.$body-color;
+  color: $body-color;
   font-family: 'Montserrat', sans-serif;
-  font-size: fn.rem(14);
-  line-height: fn.rem(21);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var.$grey;
+  font-size: rem(14);
+  line-height: rem(21);
+  background-color: $body-bg-color;
   font-weight: 500;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $grey;
+  font-weight: 700;
+}
+
 h1 {
-  font-size: fn.rem(26);
-  line-height: fn.rem(32);
+  font-size: rem(26);
+  line-height: rem(32);
 }
 
 h2 {
-  font-size: fn.rem(23);
-  line-height: fn.rem(28);
+  font-size: rem(23);
+  line-height: rem(28);
 }
 
 h3 {
-  font-size: fn.rem(20);
-  line-height: fn.rem(24);
+  font-size: rem(20);
+  line-height: rem(24);
 }
 
 h4 {
-  font-size: fn.rem(17);
-  line-height: fn.rem(20);
+  font-size: rem(17);
+  line-height: rem(20);
 }
 
-h5, h6 {
-  font-size: fn.rem(14);
-  line-height: fn.rem(17);
+h5 {
+  font-size: rem(15);
+  line-height: rem(18);
+}
+
+h6 {
+  font-size: rem(14);
+  line-height: rem(17);
+}
+
+p {
+  color: $text;
+}
+
+i {
+  color: $body-color;
 }

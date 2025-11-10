@@ -1,9 +1,13 @@
-@use "bootstrap" as *;
+@use "modules/var" as *;
+
+@use "bootstrap" as b with (
+  $table-color: $body-color,
+  $table-striped-bg: $table-item-bg,
+);
+
 @use "modules/typography";
-@use "modules/fn";
-@use "modules/var";
+@use "modules/fn" as *;
 @use "modules/components";
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-

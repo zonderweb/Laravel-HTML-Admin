@@ -1,5 +1,30 @@
-@use "var";
+@use "var" as *;
+@use "fn" as *;
 
 .card-item {
-  box-shadow: var.$item-shadow;
+  box-shadow: $item-shadow;
+  background-color: #fff;
+  margin-bottom: rem(24);
+  border-radius: rem(4);
+
+  &-header {
+    padding: rem(16) rem(20);
+  }
+
+  &-body {
+    padding: rem(20);
+  }
+}
+
+.card-item {
+  table {
+    th:first-child {
+      border-left: 0;
+      padding-left: rem(20);
+    }
+  }
+}
+
+.border-item {
+  border: 1px solid $border-color;
 }
