@@ -1,0 +1,5 @@
+@use "var";
+
+.card-item {
+  box-shadow: var.$item-shadow;
+}
