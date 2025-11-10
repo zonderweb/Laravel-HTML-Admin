@@ -8,55 +8,38 @@
 </head>
 <body>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-3">
-            <div class="card-item border-item">
-                <div class="card-item-header">
-                    <h5><i class="fa-brands fa-bitcoin"></i> Markets</h5>
-                </div>
-                <table class="table table-striped table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                        <th scope="col">Numbers</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>+17,11</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>+13%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>@social</td>
-                        <td>-2020,8</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+<!--SIDEBAR-->
+<nav class="sidebar">
+    <div class="logo"><i class="bi bi-badge-8k"></i> <span>Admin</span></div>
+    <h4 class="sidebar-menu-title"><span>Головне Меню</span></h4>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-columns-gap"></i>
+                <span class="ms-2">Dashboard</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--MAIN AREA-->
+<div class="main-content">
+    <!--    BTN MENU-->
+    <div id="toggleSidebar" class="sidebar-toogle-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <!--    HEADER-->
+    <div class="header d-flex align-items-center mb-4 mt-2">
+        <h1 class="header-title">Admin Panel</h1>
+        <div class="login-area">
+            <a href="/" class="login">
+                <i class="bi bi-person-bounding-box"></i>
+            </a>
         </div>
-        <div class="col-lg-9"></div>
     </div>
 
+    <!--    MAIN CONTENT-->
 </div>
-
-
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>
