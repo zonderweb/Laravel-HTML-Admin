@@ -3,6 +3,7 @@
 @use "bootstrap" as b with (
   $table-color: $body-color,
   $table-striped-bg: $table-item-bg,
+  $border-color: $border-color,
 );
 
 @use "modules/typography";
